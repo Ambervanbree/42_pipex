@@ -6,7 +6,7 @@
 #    By: avan-bre <avan-bre@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/23 10:09:38 by avan-bre          #+#    #+#              #
-#    Updated: 2021/11/29 15:38:40 by avan-bre         ###   ########.fr        #
+#    Updated: 2021/12/07 15:23:41 by avan-bre         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,8 +22,8 @@ CC		=	@clang
 IFLAGS	=	-I. -Ilibft
 CFLAGS	:=	-Wall -Werror -Wextra $(IFLAGS)
 LFLAGS	:=	-Llibft -lft
-SRCS	=	pipex.c find_location.c fork.c pipes.c
-B_SRCS	=	pipex_b.c find_location_b.c fork_b.c pipes_b.c
+SRCS	=	pipex.c find_location.c fork.c pipes.c exit_utils.c
+B_SRCS	=	pipex_b.c find_location_b.c fork_b.c pipes_b.c exit_utils_b.c
 S_DIR	=	sources/
 B_DIR	=	bonus_sources/
 OBJS	=	$(addprefix $(S_DIR), $(SRCS:.c=.o))
